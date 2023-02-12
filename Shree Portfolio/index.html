@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrinivas Jadhav</title>
+
+    <!----Font icon -->
+
+    <script
+      src="https://kit.fontawesome.com/7a77c8158a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Linked bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!--js for navbar dropdrown-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <!--Linked css page to html-->
+  </head>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <body>
+    <!---------------------------------------------------Navbar------------------------------------------------>
+    <div class="container-fluid">
+      <nav id="navbars" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">shree</a
+        ><!--Brand name-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbartoggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--navbar content will go in single button-->
+
+        <div class="collapse navbar-collapse" id="navbartoggler">
+          <!--button defined-->
+
+          <!--navbar content-->
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-hov" href="#title">Home</a>
+              <!--href tag to navigate particular anchor tag to that location-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hov" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link nav-hov" href=""
+                  >Portfolio <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#portfolioss">Previous Work</a>
+                  <a href="#Extra-activities">Extra Activities</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-hov" href="#contact">Contact</a>
+            </li>
+            <li class="resume-block">
+              <a class="nav-link" href="">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--------------------------------------------------Title------------------------------------------------------->
+
+    <section id="title">
+      <div>
+        <h5 class="small-heading">Hello, my name is</h5>
+        <h1 class="big-heading">Shrinivas Jadhav.</h1>
+        <h2 class="medium-heading">
+          Learning new technology is something I love to do.
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="para">
+            I'm presently a student seeking a B.Tech degree at VIT Pune. I have
+            a strong interest in technology and want to learn everything I can
+            about it.I'm presently a student seeking a B.Tech degree at VIT
+            Pune. I have a strong interest in technology and want to learn
+            everything I can about it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------About Me------------------------------------------------------------------>
+
+    <section id="about-me">
+      <h3>
+        About Me
+        <hr />
+      </h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="about-para">
+            Hello, Myself Shrinivas and I am passionate about learning new
+            technologies. I have a creative mind and a strong desire to expand
+            my knowledge in the field of technology. I am always on the lookout
+            for new ways to enhance my skills and stay up-to-date with the
+            latest advancements. My love for technology has driven me to explore
+            different aspects of the field and discover new possibilities. I am
+            confident that my passion and commitment to learning will help me
+            achieve my goals and make a meaningful impact in the field of
+            technology.
+          </p>
+
+          <h6>I've lately worked with the following technologies:-</h6>
+          <div class="row list">
+            <div class="col-lg-4">
+              <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="personal-img" src="img/Shrinivas_Jadhav.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------------------Past work------------------------------------------------------>
+
+    <section id="portfolioss">
+      <h3 class="pwork">My Previous Work</h3>
+      <section id="portfolio">
+        <div class="container">
+          <div class="card">
+            <div class="img-box" data-text="Alcoho">
+              <!--video-->
+              <img src="img/Shrinivas_Jadhav.jpg" width="200px" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>Alcohol Sensing Engine Lock System</h5>
+                <p class="info">
+                  Nowadays the drunk and drive cases and the road accidents are
+                  happening in the great extent due to the uncontrolled driving
+                  by the driver. To control these accidents.
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-box" data-text="Alcoho">
+              <!--video-->
+              <img src="img/Shrinivas_Jadhav.jpg" width="200px" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>Alcohol Sensing Engine Lock System</h5>
+                <p class="info">
+                  Nowadays the drunk and drive cases and the road accidents are
+                  happening in the great extent due to the uncontrolled driving
+                  by the driver. To control these accidents.
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-box" data-text="Alcoho">
+              <!--video-->
+              <img src="img/Shrinivas_Jadhav.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>Alcohol Sensing Engine Lock System</h5>
+                <p class="info">
+                  Nowadays the drunk and drive cases and the road accidents are
+                  happening in the great extent due to the uncontrolled driving
+                  by the driver. To control these accidents.
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-box" data-text="Alcoho">
+              <!--video-->
+              <img src="img/Shrinivas_Jadhav.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>Alcohol Sensing Engine Lock System</h5>
+                <p class="info">
+                  Nowadays the drunk and drive cases and the road accidents are
+                  happening in the great extent due to the uncontrolled driving
+                  by the driver. To control these accidents.
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-------------------------------------------------------Extra activities--------------------------------------------------->
+
+    <section id="Extra-activities">
+      <h3>Extra Activities</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="extra-img" src="img/Shrinivas_Jadhav.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-6">
+          <h4 class="eactivity">TEDxVITPune 2022-Present</h4>
+          <h5 class="extra-sub">Multimedia & Design Head</h5>
+          <p class="about-para">
+            Introducing myself as a part of TEDxVITPune community. i am highly
+            skilled and creative individual with a passion for multimedia and
+            design. As a head of the multimedia and design team, I am
+            responsible for creating visually appealing designs and videos that
+            bring TEDxVITPune events to life.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="eactivity">Social Welfare & Development Committee</h4>
+          <h5 class="extra-sub">volunteer - "Aatmabodh - A Flagship Event"</h5>
+          <p class="about-para">
+            Aatmabodh is a programme for digital literacy that has been
+            available to housewives and senior adults since 2008. The
+            fundamentals of computers, cellphones, governmental apps, Microsoft
+            Office, and other technology education are taught to users.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="extra-img" src="img/Shrinivas_Jadhav.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------------Contact me ---------------------------------------->
+
+    <section id="contact">
+      <h1 class="getintouch">Get In Touch</h1>
+      <h5 class="extra-sub">
+        I’m currently looking for new opportunities, my inbox is always open.
+        Whether you have a question or just want to say hi, I’ll try my best to
+        get back to you!
+      </h5>
+
+      <a class="border emailbox"  href="mailto:jadhavshrinivasjadhav0703@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a>
+
+    </section>
+
+    <footer id="footer">
+
+      <ul>
+      <li><a class="foot-icon" href="https://www.instagram.com/jadhav_shrinivas_0703/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a class="foot-icon" href="https://www.linkedin.com/in/shrinivas-jadhav-525114228/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a class="foot-icon" href="https://github.com/shreee07"><i class="fa-brands fa-github"></i></i></a></li>
+      <li><a class="foot-icon" href=""><i class="fa-brands fa-twitter"></i></a></li>
+      <p class="copywrite">© Shrinivas Jadhav</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--jquery cdn link-->
+    <script src="main.js"></script>
+  </body>
+</html>
