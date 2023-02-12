@@ -1,0 +1,480 @@
+body {
+  background: #0a192f;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* hsl(51, 100%, 74%) */
+
+
+/*------------------------------------------------------- Navbar css------------------------------------------------------------------ */
+
+.navbar {
+  padding: 0.5rem 4rem;
+  position: fixed; /*px  Make it stick/fixed */
+  top: 0; /* Stay on top */
+  left: 0;
+  right: 0;
+  box-shadow: 0 10px 30px -10px rgba(4, 8, 18, 0.459);
+  transition: top 0.3s;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.nav-item {
+  display: block;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.resume-block {
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thick;
+  border-color: hsl(51, 100%, 74%);
+  
+}
+
+.resume-block:hover {
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    hsla(145, 100%, 74%, 0.874),
+    hsl(179, 63%, 37%) 100%
+  );
+}
+
+.nav-hov:hover {
+  border-radius: 10px 100px/120px;
+  background: linear-gradient(
+    45deg,
+    hsl(51, 100%, 74%),
+    hsl(179, 63%, 37%) 100%
+  );
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.paragraph {
+  padding-top: 10rem;
+  color: aliceblue;
+
+  text-align: right;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  
+  position: absolute;
+  background-color: #384774;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #7a839d;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+/*---------------------------------------------Title-----------------------------------------*/
+
+
+p{
+  color: white;
+}
+
+.small-heading{
+
+  line-height: 3rem;
+  color: hsl(51, 64%, 65%);
+}
+
+.medium-heading{
+color: #8892b0;
+font-size: clamp(30px, 6vw, 50px);
+font-weight: bold;
+}
+
+
+.big-heading{
+  color: rgb(195, 215, 250);
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: bold;
+}
+
+#title{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px 15%;
+
+}
+
+.para{
+  
+  color: #b8c5ea;
+  padding-top: 1.5rem;
+  
+}
+
+
+/*-------------------------------------------------------About Me---------------------------------------*/
+
+#about-me{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px 15%;
+}
+
+h3, h6{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+h6{
+  margin-top: 2rem;
+}
+
+.about-para{
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.personal-img{
+  padding: 3rem 0 5rem;
+  display: block;
+  position: relative;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.list{
+  color: rgb(255, 255, 255);
+}
+
+
+/*---------------------------------------------Past work ---------------------------------------------*/
+
+
+#portfolioss{
+ 
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 4rem 15%;
+
+}
+#portfolio{
+ display:flex;
+ 
+  justify-content: center;
+
+ align-items: center;
+
+ 
+
+}
+
+
+
+
+.container{
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 0;
+  
+
+}
+
+.container .card{
+  position: relative ;
+  height: 250px;
+  background-color: #8892b0;
+  display: flex;
+  width: 45%;
+  margin: 30px 0;
+}
+
+.container .card .img-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a192f;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .img-box{
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  background: red;
+}
+
+.container .card .img-box::before{
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #707276;
+  font-weight: 700;
+}
+
+.container .card .img-box img{
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+
+}
+
+.container .card:hover .img-box img{
+  max-width: 80px;
+}
+
+.container .card .content{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .content h5{
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: red;
+}
+
+.container .card .content a{
+  display: inline-block;
+  margin-top:10px ;
+  padding: 5px 10px;
+  background-color: #0a192f;
+  text-decoration: none;
+  color: white;
+  
+
+}
+
+
+@media (max-width: 1245px)
+{
+  .container{
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card{
+    width: 450px;
+  }
+}
+
+/*----------------------------------------------- Extra activities --------------------------------------*/
+
+
+#Extra-activities{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px 15%;
+}
+
+.eactivity{
+  color: white;
+  margin-top: 2rem;
+}
+
+.extra-img{
+  padding: 3rem 0 5rem;
+  display: block;
+  position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.extra-sub{
+  color: #b8c5ea;
+}
+
+/*--------------------------------------------------- Contact ----------------------------------------------*/
+
+#contact{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0px 25%;
+
+
+  
+}
+
+.getintouch{
+  color: hsl(51, 100%, 74%);
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact h5{
+  padding-top: 2rem;
+  font-size: clamp(5px, 6vw, 20px);
+  text-align: center;
+  
+}
+
+.emailbox{
+ 
+  color: hsl(51, 100%, 69%);
+  
+
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  
+  text-align: center;
+  
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.emailbox:hover{
+  background-color:  hsla(51, 81%, 84%, 0.673);
+}
+
+/*------------------------------------------------- footer -----------------------------------------------------*/
+
+
+#footer {
+  background-color: #232c48;
+  text-align: center;
+  padding: 3% 10%;
+
+}
+
+#footer ul{
+  position: relative;
+ display: flex;
+  z-index: 1;
+ justify-content: center;
+ align-items: center;
+}
+
+
+#footer ul li{
+  position: relative;
+  list-style: none;
+  margin: 0.7rem;
+}
+
+#footer ul li a{
+  text-align: center;
+  position: relative;
+  width: 3rem;
+height: 3rem;
+display: inline-block;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+font-size: 1.5rem;
+color: hsl(51, 100%, 69%);
+border: 1px solid hsl(51, 100%, 69%);
+border-right: 1px solid hsl(51, 33%, 33%);
+border-bottom: 1px solid hsl(51, 33%, 33%);
+box-shadow: 0 5px 45px rgb(15, 27, 54);
+backdrop-filter: blur(2px);
+transition: 0.8s;
+overflow: hidden;
+}
+
+#footer ul li a:hover{
+transform: translateY(-30px);
+}
+
+#footer ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: #b8c5ea;
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.8s;
+
+}
+
+#footer ul li a:hover::before{
+  transform: skewX(45deg) translateX(-150px);
+}
+
+.copywrite{
+  position:absolute;
+  padding-top:8rem ;
+z-index: -1;
+}
